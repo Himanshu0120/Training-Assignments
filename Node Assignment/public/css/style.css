@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    text-align: center;
+    
+    padding: 5px 0 10px 0;
+    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #161616;
+    color: white;
+}
+
+.btn{
+    color: white;
+    border: none;
+    padding: 7px 13px 7px 13px;
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 100px
+}
+
+#newpost{
+    border: 1px solid #1775e1;
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-size: medium;
+    
+}
+
+#newpost:hover{
+    background-color: #1775e1;
+    color: white;
+}
+
+
+.posts{
+    
+    background-color: hsla(0,0%,100%,.05);
+    
+    width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+
+article{
+    
+    width: 100%;
+    
+    border-bottom: 1px solid hsl(256, 97%, 69%); ;
+}
+.btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.post{
+    padding: 10px;
+}
+.read{
+    background-color:#37c98c;
+    
+}
+.delete{
+    background-color: red;
+    
+}
+.edit{
+    background-color: #1775e1;
+}
+
+
+
+

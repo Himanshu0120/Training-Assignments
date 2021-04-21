@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    background-color: #2a4158;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+h3{
+    margin-top: 75px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+.flight{
+    display: inline-block;
+    
+    width: 40%;
+    min-width: 400px;
+    background-color: rgb(144, 167, 194);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+p{
+    display: inline-block;
+}
+ button{
+    border: none;
+    background-color: rgb(46, 184, 184);
+    color: white;
+    padding:5px 10px 5px 10px;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.button{
+   margin-top: 20px;
+    text-align: center;
+}

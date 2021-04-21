@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2 id="heading">Student Enrollment Form</h2>
+    </header>
+    <!-- Header close -->
+
+
+    <div class="container-fluid  " >
+       
+        <div class="row">
+
+            
+            <div class="col-lg">
+                <div class="alertArea px-4"></div>
+            <!-- Form Area -->
+            <form class="p-4 mb-3" id="form">
+                <!-- Name -->
+                <div class="form-group row">
+                    <label for="NameInput" class="col-3 col-form-label ">Name</label>
+                    <div class="col-9 ">
+                        <input type="text" class="form-control input-field" id="NameInput" required placeholder="Your Name">
+                    </div>
+                </div>
+                <!-- /Name -->
+
+                <!-- Email -->
+                <div class="form-group row mt-4">
+                    <label for="EmailInput" class="col-3 col-form-label ">E-Mail</label>
+                    <div class="col-9 ">
+                        <input type="email" class="form-control input-field" id="EmailInput" required placeholder="Your Email">
+                    </div>
+                </div>
+                <!-- /Email -->
+
+                <!-- Website -->
+                <div class="form-group row mt-4">
+                    <label for="WebsiteInput" class="col-3 col-form-label">Website</label>
+                    <div class="col-9 ">
+                        <input type="url" class="form-control input-field" id="WebsiteInput" required placeholder="Ex:-https://www.google.com">
+                    </div>
+                </div>
+                <!-- /Website -->
+
+                <!-- Image -->
+                <div class="form-group row mt-4">
+                    <label for="ImageInput" class="col-3 col-form-label">Image Link</label>
+                    <div class="col-9 ">
+                        <input type="url" class="form-control input-field" id="ImageInput" required placeholder="Link for image">
+                    </div>
+                </div>
+                <!-- /Image -->
+
+                <!-- Gender -->
+                <div class="form-group row mt-4">
+                    <label  class="col-3 col-form-label">Gender</label>
+                    <div class="col-9 ">
+
+                        <input type="radio" name="gender"  value="Male" required>
+                        <label class="form-check-label" >
+                            Male
+                        </label>
+
+                          <br>
+
+                        <input type="radio" name="gender"  value="Female" required>
+                        <label class="form-check-label"  >
+                            Female
+                        </label>
+                    </div>
+                </div>
+                 <!--/Gender  -->
+
+                 <!-- Skills -->
+                <div class="form-group row mt-4">
+                    <label class="col-3 col-form-label">Skills</label>
+                    
+                    <div class="col-9 check">
+                        
+                        <input class="form-check-input " name="skills" type="checkbox" value="Java" >
+                        <label class="form-check-label">
+                          Java
+                        </label>
+
+
+                        <input class="form-check-input " name="skills" type="checkbox" value="HTML" >
+                        <label class="form-check-label" >
+                         HTML
+                        </label>
+
+
+                        <input class="form-check-input " name="skills" type="checkbox" value="CSS" >
+                        <label class="form-check-label">
+                          CSS 
+                        </label>
+                    </div>
+                </div>
+                <!-- /Skills -->
+
+                <!-- Buttons -->
+                <div class="row mt-4">
+                    <input type="submit" value="Enroll" class="col-4 btn btn-primary mx-auto">
+                    <button type="button" id="clearFields" class="col-4 mx-auto btn btn-danger " formnovalidate>Clear Fields</button>
+                
+                
+       
+                </div>
+                <!-- /Buttons -->
+            </form>
+            </div>
+            <!-- Form Area Close -->
+
+            
+            <!-- Enrolled Students Area -->
+            <div class="col-lg">
+                <h3 class="text-center m-5">Enrolled Students</h3>
+                <div id="removeAll">
+                    <button style="width: 100%;" type="button" id="clear" class="btn btn-outline-danger" formnovalidate>Remove All</button>
+                </div>
+                <table class="table mt-2 table-bordered table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th style="width:30%">Image</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+
+                </table>
+            </div>
+            <!-- Enrolled Students area close -->
+        </div>
+    </div>
+
+
+    <footer>
+        <h4 id="footerText">Himanshu Srivastava</h4>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

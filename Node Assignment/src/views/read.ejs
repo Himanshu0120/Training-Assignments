@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    text-align: center;
+    
+    padding: 5px 0 10px 0;
+    
+}
+.btn{
+    color: white;
+    border: none;
+    padding: 7px 13px 7px 13px;
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 100px
+}
+#back{
+    border: 1px solid #1775e1;
+    color: white;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100px;
+    font-size: medium;
+    
+}
+#back:hover{
+    background-color: #1775e1;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+.blog{
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: justify;
+    background-color: hsla(0,0%,100%,.05);
+    padding: 20px;
+}
+.delete{
+    background-color: red;
+    
+}
+.edit{
+    background-color: #1775e1;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #161616;
+    color: white;
+}
+p{
+    color: hsla(0,0%,100%,.5);;
+}
+.btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+    </style>
+</head>
+<body>
+    <header><h1>Blog Post App</h1></header>
+    <button class="btn" id="back"><a href="/">Back</a></button>
+    <div class="blog">
+        <h2> <%=blog.title%></h2>
+        <br>
+        <p> <%=blog.content%></p>
+        <div class="btns">
+            <button class="btn edit"><a href="/blogs/edit/<%=blog.id%>">Edit</a></button>
+            <button class="btn delete"><a href="/blogs/delete/<%=blog.id%>">Delete</a></button>
+        </div>
+    </div>
+   
+   
+</body>
+</html>

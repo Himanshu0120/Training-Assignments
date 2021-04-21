@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Blog Post App</h1></header>
+    <section>
+        <button class="btn" id="newpost"><a href="/blogs/new">New Post</a></button>
+        <div class="posts">
+            <%for(var i=0;i<blogs.length;i++){%>
+            <article>
+                <div class="post">
+                   <h2> <%=blogs[i].title%></h2>
+                   <div class="btns">
+                       <button class="btn read"><a href="/blogs/read/<%=blogs[i].id%>">Read More</a></button>
+                       <button class="btn edit"><a href="/blogs/edit/<%=blogs[i].id%>">Edit</a></button>
+                       <button class="btn delete"><a href="/blogs/delete/<%=blogs[i].id%>">Delete</a></button>
+                   </div>
+                </div>
+            </article>
+            <%}%>
+           
+          </div> 
+    </section>
+</body>
+</html>
