@@ -1,0 +1,19 @@
+create database TravelPortalDb;
+use TravelPortalDb;
+create table User(
+id int primary key auto_increment,
+firstName varchar(255),
+lastName  varchar(255),
+buisnessUnit varchar(255),
+title varchar(255),
+email varchar(255),
+telephone varchar(255),
+address1 varchar(255),
+address2 varchar(255),
+city varchar(255),
+state varchar(255),
+zip varchar(255),
+country varchar(255),
+password varchar(255),
+userType varchar(255)
+);
